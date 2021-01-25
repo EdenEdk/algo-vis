@@ -1,0 +1,29 @@
+:host{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.idx1-idx{
+    background-color: var(--idx1) !important;
+}
+
+.idx2-idx{
+    background-color: var(--idx2) !important;
+}
+
+.replaceIdx-idx{
+    background-color: var(--acc1) !important;
+}
+.pivot-idx{
+    background-color: var(--acc2) !important;
+}
+
+.bar{
+    background-color: var(--secondary);
+    color: var(--primary);
+    width: 2vw;
+    margin: 0 1px;
+    font-size: 1vw;
+    text-align: center;
+}

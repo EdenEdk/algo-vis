@@ -1,0 +1,20 @@
+:host{
+    display: grid;
+    flex: 1;
+    grid-template-columns: 40% 60%;
+    padding-left: 50px;
+    background-color: var(--acc1);
+    color: var(--secondary);
+}
+
+.tabs-container{
+    display: flex;
+    justify-content: space-around;
+    flex: 1;
+}
+
+span{
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+}

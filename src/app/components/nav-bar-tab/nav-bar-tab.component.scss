@@ -1,0 +1,25 @@
+:host{
+    display: flex;
+    flex:1;
+}
+
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    cursor: pointer;
+}
+
+div:hover{
+    background-color: var(--dim-secondary);
+}
+
+div>span{
+    margin-right: 10px;
+}
+
+.selected{
+    background-color: var(--acc1-dim);
+    text-decoration: underline var(--primary);
+}

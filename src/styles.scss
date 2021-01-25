@@ -1,1 +1,40 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Cardo:400i|Rubik:400,700&display=swap');
+
+:root{
+    --base-color:#323232;
+    --light:rgb(238, 238, 238);
+    --light-hover:rgba(238, 238, 238, 0.3);
+    --red:#ec625f;
+    --cyan:#14ffec;
+    --blue:rgb(0, 173, 181);
+    --blue-hover:rgba(0, 173, 181,0.3);
+    --green:#4ecca3;
+    --orange:#ffac41;
+    --yellow:#ffd933;
+    --purple:#b030b0;
+
+     --primary: #073b4c;
+     --primary-light: #052935;
+    // --primary: #323232;
+    --secondary:rgb(237, 242, 244);
+    --dim-secondary:rgba(237, 242, 244, 0.3);
+    --acc1:#06d6a0;
+    --acc1-dim:#05c592;
+    --acc2:#ffd166;
+    --acc2-light:rgb(253, 194, 55);
+    --idx1:#ef476f;
+    --idx2:#118ab2;
+}
+
+html, body{
+    margin:0;
+    padding:0;
+    height: 100%;
+    background-color: var(--primary);
+    color: var(--secondary);
+    font-size: 2vh;
+    user-select:none;
+    font-weight: bold;
+    font-family: 'Rubik', serif;
+}

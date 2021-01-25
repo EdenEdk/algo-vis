@@ -1,0 +1,9 @@
+<div *ngFor="let number of sortedArray; let idx = index" class="bar" 
+[ngClass]="{
+    'pivot-idx' : idx === sortStep.pivotIdx,
+    'replaceIdx-idx' : idx === sortStep.replaceIdx,
+    'idx2-idx' : idx === sortStep.idx2,
+    'idx1-idx' : idx === sortStep.idx1}"
+[ngStyle]="{height: number+'px'}">
+    {{number}}
+</div>

@@ -1,0 +1,30 @@
+<div class="sorting-container-actions">
+    <div class="sort-actions">
+        <app-action-button [title]="'Start Sorting'" [icon]="'fas fa-play-circle'" (btnClick)="startSorting()"></app-action-button>
+        <app-action-button [title]="'Stop Sorting'" [icon]="'fas fa-stop-circle'" (btnClick)="stopSorting()"></app-action-button>
+    </div>
+    <div class="sort-options">
+        <div class="sort-option">
+            <span class="sort-option-label">
+                <i class="fas fa-clock"></i>
+                Sort Speed
+            </span>
+            <select (change)="changeSortSpeed($event.target.value)">
+                <option *ngFor="let interval of intervalCombobox" [selected]="interval.ms === intervalTime"
+                [value]="interval.ms">{{interval.type}}</option>
+            </select>
+        </div>
+        <div class="sort-option">
+            <span class="sort-option-label">
+                <i class="fas fa-clock"></i>
+                Sort Type
+            </span>
+            <select [(ngModel)]="sortType">
+                <option *ngFor="let sortType of sortTypeCombobox" [selected]="sortType.value === sortType"
+                [value]="sortType.value">{{sortType.name}}</option>
+            </select>
+        </div>
+    </div>
+    <app-action-button [title]="'Ramdomize Array'" [icon]="'fas fa-random'" (btnClick)="generateNewArray()"></app-action-button>
+</div>
+<app-sort-visualization [sortedArray]="numbersArray"></app-sort-visualization>
